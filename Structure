@@ -1,0 +1,21 @@
+runway-renewal-operations-analytics/
+│
+├── data/
+│   ├── raw/
+│   │   └── README.md
+│   ├── processed/
+│   │   └── README.md
+│
+├── sql/
+│   ├── equipment_utilization.sql
+│   ├── daily_production_metrics.sql
+│
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_exploratory_analysis.ipynb
+│   ├── 03_kpi_analysis.ipynb
+│
+├── reports/
+│   └── runway_operations_summary.md
+│
+└── README.md
