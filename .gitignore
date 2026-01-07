@@ -1,0 +1,19 @@
+# Python virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated data
+data/raw/
+
+# Generated reports
+reports/generated/
+
+# OS files
+.DS_Store
+

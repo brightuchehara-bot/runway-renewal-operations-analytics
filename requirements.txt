@@ -1,0 +1,9 @@
+pandas
+numpy
+python-dotenv
+SQLAlchemy
+pymysql
+matplotlib
+jupyter
+tabulate
+tabulate
