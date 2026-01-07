@@ -1,32 +1,45 @@
-# runway-renewal-operations-analytics
-Operations analytics project using SQL and Python to optimize resource utilization and scheduling for a $60M airport runway renewal.
 # Runway Renewal Operations Analytics
 
-## Overview
-This project demonstrates how SQL and Python can be used to analyze operational data from a large-scale infrastructure project, specifically a $60M airport runway renewal.
+Operations analytics project using SQL and Python to improve resource 
+utilization,
+schedule adherence, and production performance for a runway renewal 
+program.
 
-The goal was to improve visibility into equipment utilization, labor allocation, and production throughput to support data-driven scheduling and resource planning.
+## Overview
+This project transforms operational field data (equipment usage, crew 
+allocation,
+and production logs) into KPI views and repeatable executive reporting.
 
 ## Tech Stack
-- SQL
-- Python (pandas, matplotlib)
-- Jupyter Notebooks
-- Excel (source data modeling)
+- MySQL 8 (SQL views)
+- Python (pandas, SQLAlchemy, matplotlib)
+- Shell scripting
+- Git
 
 ## Project Structure
-- `data/` – Raw and processed operational datasets
-- `sql/` – SQL queries for KPI aggregation
-- `notebooks/` – Python workflows for cleaning and analysis
-- `reports/` – Executive-ready analytics summaries
+- `data/` – sample operational CSVs
+- `sql/schema/` – table definitions
+- `sql/kpis/` – KPI views
+- `scripts/` – end-to-end pipeline
+- `reports/generated/` – charts and executive summary
 
-## Key Metrics
-- Equipment utilization rate
-- Daily production output
-- Crew utilization
-- Work-zone throughput
+## Quickstart (Local)
+### Configure DB (Recommended: secure MySQL login-path)
 
-## Outcome
-This analysis provided actionable insights into operational bottlenecks and resource inefficiencies, enabling improved schedule adherence and operational decision-making.
+This avoids placing passwords directly in shell commands.
 
-## Notes
-Data is anonymized and/or simulated to demonstrate analytics workflows.
+```bash
+mysql_config_editor set --login-path=runway_ops --host=localhost --user=runway_user --password
+mysql --login-path=runway_ops -e "SELECT NOW();"
+```
+
+### Prerequisites
+- Python 3.10+
+- MySQL 8.x with `mysql` CLI
+
+### Install
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
