@@ -10,6 +10,11 @@ This project transforms operational field data (equipment usage, crew
 allocation,
 and production logs) into KPI views and repeatable executive reporting.
 
+## Architecture
+
+![Runway Operations Analytics Architecture](runway_ops_architecture.png)
+
+
 ## Tech Stack
 - MySQL 8 (SQL views)
 - Python (pandas, SQLAlchemy, matplotlib)
